@@ -1,0 +1,615 @@
+                        @import"color.scss";
+                        ul,
+                        ol {
+                            list-style-type: none;
+                            margin: 0px;
+                            padding: 0px;
+                        }
+                        
+                        p {
+                            margin: 0px;
+                        }
+                        
+                        a {
+                            text-decoration: none;
+                        }
+                        
+                        button {
+                            border: none;
+                            border-radius: 5px;
+                            font-weight: bolder;
+                        }
+                        
+                        body {
+                            * {
+                                box-sizing: border-box;
+                            }
+                            font-family: sans-serif;
+                            header {
+                                padding: 5px;
+                                display: flex;
+                                justify-content: space-evenly;
+                                // .header-logo-image {
+                                //     width: 100px;
+                                // }
+                                div {
+                                    display: inline-block;
+                                    padding: 10px 30px 10px 0px;
+                                    .header-malelogo {
+                                        width: 20px;
+                                    }
+                                    .header-welcome {
+                                        font-size: 20px;
+                                    }
+                                    .header-karthrin {
+                                        font-weight: bold;
+                                        font-size: 20px;
+                                    }
+                                }
+                                ul {
+                                    width: 19%;
+                                    display: flex;
+                                    margin: 0px 60px;
+                                    .header-ad {
+                                        width: 51px;
+                                        height: 44px;
+                                    }
+                                    .header-logo1 {
+                                        background: url(images/top-bar.png) -60px 0;
+                                    }
+                                    .header-logo2 {
+                                        background: url(images/top-bar.png) -109px 0;
+                                    }
+                                    .header-logo3 {
+                                        background: url(images/top-bar.png) -156px 0;
+                                    }
+                                    .header-logo4 {
+                                        background: url(images/top-bar.png) -206px 0;
+                                    }
+                                    .header-logo5 {
+                                        background: url(images/top-bar.png) -253px 0;
+                                    }
+                                    .header-logo6 {
+                                        background: url(images/top-bar.png) -305px 0;
+                                    }
+                                }
+                            }
+                            nav {
+                                display: flex;
+                                background-color: $grey;
+                                .nav-section-loan-number {
+                                    padding: 10px 0px 10px 0px;
+                                    label {
+                                        margin: 10px;
+                                        font-size: 25px;
+                                    }
+                                    select {
+                                        display: block;
+                                        width: 200px;
+                                        height: 40px;
+                                        border-radius: 5px;
+                                        margin: 5px;
+                                        padding: 5px;
+                                        font-size: 25px;
+                                        background-color: $grey;
+                                    }
+                                }
+                                ul {
+                                    background-color: #fafafa;
+                                    border-radius: 5px;
+                                    width: 28%;
+                                    margin: 5px;
+                                    padding: 15px;
+                                    label {
+                                        font-weight: bold;
+                                        font-size: 15px;
+                                    }
+                                    span {
+                                        float: right;
+                                    }
+                                }
+                            }
+                            main {
+                                display: flex;
+                                aside {
+                                    background-color: $darkgrey;
+                                    color: $white;
+                                    width: 17%;
+                                    div {
+                                        padding: 10px 7px 0px 5px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        div {
+                                            .aside-dropdown {
+                                                width: 15px;
+                                                filter: invert(100%);
+                                            }
+                                        }
+                                    }
+                                    .aside-menu {
+                                        float: right;
+                                        filter: invert(100%);
+                                    }
+                                }
+                                .aside-list {
+                                    li {
+                                        padding: 15px 15px 15px 10px;
+                                        clear: both;
+                                        .aside-img {
+                                            width: 20px;
+                                            margin-right: 10px;
+                                            filter: invert(100%);
+                                        }
+                                        label {
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                    li:hover {
+                                        background-color: $hoverblue;
+                                        border-left: 5px solid $yellow;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        section {
+                            width: 83%;
+                            margin: 10px;
+                            border-radius: 5px;
+                            header {
+                                display: flex;
+                                justify-content: space-between;
+                                border-bottom: 1px solid $grey;
+                                padding: 0px;
+                                margin-bottom: 5px;
+                                .section-header-left {
+                                    button {
+                                        padding-bottom: 5px;
+                                        border-radius: none;
+                                        background-color: white;
+                                    }
+                                    button:hover {
+                                        border-top: 3px solid $yellow;
+                                        border-bottom: 3px solid white;
+                                        border-left: 1px solid$border;
+                                        border-right: 1px solid$border;
+                                        padding: 10px;
+                                    }
+                                }
+                                .section-header-right {
+                                    a {
+                                        font-weight: bold;
+                                        color: $buttonblue;
+                                    }
+                                }
+                            }
+                            section {
+                                width: 100%;
+                                border: 1px solid $border;
+                                ul {
+                                    display: flex;
+                                    border-radius: 6px;
+                                    justify-content: space-between;
+                                    background-color: $border;
+                                    padding: 20px;
+                                    clear: both;
+                                    li {
+                                        display: inline-block;
+                                        img {
+                                            width: 20px;
+                                        }
+                                        label {
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+                                div {
+                                    display: flex;
+                                    clear: both;
+                                    table {
+                                        border-left: 1px solid $border;
+                                        border-right: 1px solid $border;
+                                        margin: 10px;
+                                        width: 48%;
+                                        thead {
+                                            th {
+                                                border-bottom: 1px solid $border;
+                                                padding: 10px;
+                                                background-color: $grey;
+                                                text-align: left;
+                                            }
+                                        }
+                                        tbody {
+                                            padding: 20px;
+                                            tr {
+                                                border-bottom: 1px solid black;
+                                                .section-transferfunds-button {
+                                                    float: left;
+                                                    background-color: $palewhite;
+                                                    color: $buttonblue;
+                                                    width: 150px;
+                                                    padding: 10px 0px 10px 0px
+                                                }
+                                                .section-makepayement-button {
+                                                    float: right;
+                                                    background-color: $textblue;
+                                                    color: $white;
+                                                    width: 150px;
+                                                    padding: 10px 0px 10px 0px
+                                                }
+                                                .section-note {
+                                                    color: $lightgrey;
+                                                    font-weight: bolder;
+                                                    font-size: 12px;
+                                                    line-height: 2.0;
+                                                    font-style: italic;
+                                                }
+                                            }
+                                            td {
+                                                width: 100%;
+                                                border-bottom: 1px solid$border;
+                                                padding: 20px;
+                                            }
+                                            td:last-child() {
+                                                border-bottom: none;
+                                            }
+                                            td:nth-child(2) {
+                                                text-align: right;
+                                                font-weight: bold;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        ol {
+                            display: flex;
+                            justify-content: space-between;
+                            background-color: $border;
+                            padding: 20px;
+                            border-radius: 10px;
+                            margin-bottom: 10px;
+                            li {
+                                label {
+                                    font-size: 20px;
+                                }
+                                img {
+                                    width: 30px;
+                                }
+                            }
+                            li:nth-child(1) {
+                                font-weight: bold;
+                            }
+                        }
+                        
+                        .section-button {
+                            float: right;
+                            .section-transferfunds-button {
+                                float: right;
+                                background-color: $palewhite;
+                                color: $buttonblue;
+                                margin: 20px;
+                                width: 150px;
+                                padding: 10px 0px 10px 0px;
+                            }
+                            .section-makepayement-button {
+                                float: right;
+                                background-color: $textblue;
+                                color: $white;
+                                width: 150px;
+                                margin: 20px;
+                                padding: 10px 0px 10px 0px;
+                            }
+                        }
+                        
+                        footer {
+                            color: $white;
+                            background-color: #2e2e2e;
+                            border-top: 3px solid $yellow;
+                            clear: both;
+                            padding: 20px;
+                            overflow: auto;
+                            font-size: 10px;
+                            ul {
+                                clear: both;
+                                li {
+                                    float: left;
+                                    label {
+                                        font-size: 20px;
+                                    }
+                                }
+                                li:after {
+                                    content: "|";
+                                    padding: 10px;
+                                }
+                            }
+                            span {
+                                float: right;
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 1024px) {
+                            body {
+                                header {
+                                    div {
+                                        padding: 0px;
+                                        .header-welcome,
+                                        .header-karthrin {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                    .header-ad-img {
+                                        height: 33px;
+                                        margin: 5px 0px;
+                                    }
+                                    ul {
+                                        width: 23%;
+                                        margin: 0px;
+                                    }
+                                }
+                                nav {
+                                    ul {
+                                        label {
+                                            font-size: 12px;
+                                        }
+                                        span,
+                                        p {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                main {
+                                    aside {
+                                        width: 20%;
+                                        .aside-list {
+                                            li {
+                                                padding: 15px 0px;
+                                                // .aside-img {
+                                                //     margin: 0px;
+                                                // }
+                                                label {
+                                                    font-size: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                footer {
+                                    ul {
+                                        li:after {
+                                            padding-left: 9px;
+                                        }
+                                    }
+                                }
+                                section {
+                                    div {
+                                        table {
+                                            tbody {
+                                                // tr {
+                                                //     border-bottom: 1px solid grey;
+                                                td {
+                                                    padding: 10px 0px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 768px) {
+                            body {
+                                header {
+                                    .header-logo-image {
+                                        height: 39px;
+                                    }
+                                    ul {
+                                        width: 56%;
+                                    }
+                                    .header-ad-img {
+                                        height: 24px;
+                                        margin: 14px 0px;
+                                    }
+                                }
+                                nav {
+                                    .nav-section-loan-number {
+                                        label {
+                                            font-size: 14px;
+                                            margin: 0px;
+                                            padding: 20px 5px;
+                                        }
+                                        select {
+                                            width: 100px;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    ul {
+                                        p {
+                                            font-size: 10px;
+                                        }
+                                        span,
+                                        label {
+                                            font-size: 8px;
+                                            margin: 4px;
+                                        }
+                                    }
+                                }
+                                main {
+                                    aside {
+                                        font-size: 14px;
+                                        div {
+                                            padding-top: 10px 0px 0px 0px;
+                                        }
+                                        .aside-list {
+                                            li {
+                                                text-align: center;
+                                                label {
+                                                    font-size: 14px;
+                                                }
+                                                .aside-img {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    section {
+                                        table {
+                                            tbody {
+                                                tr {
+                                                    .section-makepayement-button {
+                                                        width: 100px;
+                                                        padding: 0px;
+                                                    }
+                                                    .section-transferfunds-button {
+                                                        width: 100px;
+                                                        padding: 13px 0px 13px 0px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                footer {
+                                    span {
+                                        font-size: 10px;
+                                    }
+                                    ul {
+                                        li {
+                                            font-size: 10px!important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 425px) {
+                            body {
+                                header {
+                                    padding: 0px;
+                                    // .section-print-image {
+                                    //     width: 66px;
+                                    //     // height: 50px;
+                                    // }
+                                    .header-logo-image {
+                                        width: 105px;
+                                        height: 60px;
+                                    }
+                                    .header-ad-img {
+                                        display: none;
+                                    }
+                                    div {
+                                        padding: 3px;
+                                        .header-welcome,
+                                        .header-karthrin {
+                                            font-size: 10px;
+                                        }
+                                        .header-malelogo {
+                                            height: 14px;
+                                            width: 13px;
+                                        }
+                                    }
+                                    .header-ad {
+                                        width: 66%;
+                                    }
+                                    // .header-ad-img {
+                                    //     display: none;
+                                    // }
+                                }
+                                nav {
+                                    .nav-section-loan-number {
+                                        width: 30px;
+                                        label {
+                                            font-size: 9px;
+                                        }
+                                        select {
+                                            width: 20px;
+                                        }
+                                    }
+                                    ul {
+                                        padding: 0px;
+                                        li {
+                                            // text-align: center;
+                                            label {
+                                                margin: 0px;
+                                            }
+                                            span {
+                                                margin: 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                                main {
+                                    aside {
+                                        font-size: 12px;
+                                        div {
+                                            div {
+                                                span {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        // div {
+                                        //     padding: 10px 7px 0px 10px;
+                                        // }
+                                        // // .aside-menu {
+                                        //     margin-right: 24px;
+                                        // }
+                                        .aside-list {
+                                            li {
+                                                label {
+                                                    display: none;
+                                                }
+                                                .aside-img {
+                                                    width: 25px;
+                                                    margin-left: 18px;
+                                                    display: block;
+                                                }
+                                            }
+                                            li:hover {
+                                                label {
+                                                    display: block;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    section {
+                                        ul {
+                                            li {
+                                                label {
+                                                    font-size: 8px;
+                                                }
+                                                p {
+                                                    font-size: 6px;
+                                                }
+                                            }
+                                        }
+                                        div {
+                                            display: block;
+                                            table {
+                                                width: 100%;
+                                                margin: 0px;
+                                            }
+                                        }
+                                        ol {
+                                            padding: 10px;
+                                            li {
+                                                label {
+                                                    font-size: 10px;
+                                                }
+                                                p {
+                                                    font-size: 10px;
+                                                }
+                                            }
+                                            li:nth-child(1) {
+                                                font-size: 10px;
+                                                margin: 10px 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                                footer {
+                                    overflow: auto;
+                                }
+                            }
+                        }
